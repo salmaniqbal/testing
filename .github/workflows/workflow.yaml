@@ -20,8 +20,8 @@ jobs:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - run: |
-            docker build . -t salmaniqbal/web-app-ui:${{ github.sha }}
-            docker push salmaniqbal/web-app-ui:${{ github.sha }}
+            docker build . -t web-app-ui:${{ github.sha }}
+            docker push web-app-ui:${{ github.sha }}
 
         - name: 'Deploy to Azure Container Instances'
           uses: 'azure/aci-deploy@v1'
