@@ -41,7 +41,7 @@ jobs:
             registry-login-server: docker.io
             image: salmaniqbal/web-app:latest
             cpu: 1   #Optional
-            memory: 0.1   #Optional
+            memory: 1.5   #Optional
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: ui-container
