@@ -38,6 +38,7 @@ jobs:
           with:
             resource-group: web-app
             dns-name-label: url-for-container
+            registry-login-server: docker.io
             image: salmaniqbal/web-app:latest
             cpu: 1   #Optional
             memory: 0.1   #Optional
